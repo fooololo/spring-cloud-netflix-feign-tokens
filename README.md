@@ -1,6 +1,37 @@
 ## Spring-Cloud-Netflix-Feign STUPS AccessTokens Support
 
-TODO
+###Dependency
+
+```
+    <dependency>
+        <groupId>org.zalando.stups</groupId>
+        <artifactId>spring-cloud-netflix-feign-tokens</artifactId>
+        <version>${version}</version>
+    </dependency>
+```
+
+###Usage
+
+Define your client as usual:
+
+```
+@FeignClient("kio")
+public interface KioFeignClient {
+
+    @RequestMapping(value = "/somewhere/{term}", method = RequestMethod.GET)
+    Map<String, String> getSomewhat(String term);
+}
+```
+
+**BUT** instead of using ```@EnableFeignClients``` use the following this:
+
+```
+@Configuration
+@EnableOAuth2FeignClients(basePackages = {"org.zalando.stups.clients.feign"})
+public class FeignConfig { }
+```
+
+
 
 ## License
 

@@ -3,3 +3,6 @@
 .project
 
 target
+
+meta/credentials/user.json
+meta/credentials/client.json

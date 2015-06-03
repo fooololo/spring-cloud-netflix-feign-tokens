@@ -1,0 +1,16 @@
+server:
+    port: 24048
+#
+# OAuth2
+#
+tokens:
+    accessTokenUri: http://somewhere/access_token
+    credentialsDirectory: ${user.dir}/meta/credentials
+
+    token-configuration-list:
+        - tokenId: kio
+          scopes:
+              - apps:read
+        - tokenId: pierone
+          scopes:
+              - somescope

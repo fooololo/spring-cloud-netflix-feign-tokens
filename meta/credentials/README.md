@@ -1,0 +1,1 @@
+Put 'client.json' and 'user.json' into this folder.
