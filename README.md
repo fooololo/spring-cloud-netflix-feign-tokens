@@ -1,5 +1,8 @@
 ## Spring-Cloud-Netflix-Feign STUPS AccessTokens Support
 
+[![Coverage Status](https://coveralls.io/repos/zalando-stups/spring-cloud-netflix-feign-tokens/badge.svg)](https://coveralls.io/r/zalando-stups/spring-cloud-netflix-feign-tokens)
+
+
 ###Dependency
 
 ```
