@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.zalando.stups.build</groupId>
         <artifactId>stups-parent</artifactId>
-        <version>4</version>
+        <version>6</version>
         <relativePath />
     </parent>
     <groupId>org.zalando.stups</groupId>
@@ -11,11 +11,17 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
-        <spring-boot.version>1.2.3.RELEASE</spring-boot.version>
-        <spring-cloud.version>1.0.1.RELEASE</spring-cloud.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <java.source>1.7</java.source>
+        <java.target>1.7</java.target>
+
+        <spring-boot.version>1.2.5.RELEASE</spring-boot.version>
+        <spring-cloud.version>1.0.2.RELEASE</spring-cloud.version>
+        <spring-cloud-netflix.version>1.0.3.RELEASE</spring-cloud-netflix.version>
         <feign.version>8.1.1</feign.version>
 
-        <zalando-stups-tokens.version>0.6.0</zalando-stups-tokens.version>
+        <zalando-stups-tokens.version>0.9.1</zalando-stups-tokens.version>
     </properties>
 
     <dependencyManagement>
@@ -51,7 +57,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-netflix-core</artifactId>
-            <version>${spring-cloud.version}</version>
+            <version>${spring-cloud-netflix.version}</version>
         </dependency>
         <dependency>
             <groupId>com.netflix.feign</groupId>
@@ -211,6 +217,5 @@
         <url>https://github.com/zalando-stups/spring-cloud-netflix-feign-tokens</url>
         <connection>scm:git:https://github.com/zalando-stups/spring-cloud-netflix-feign-tokens.git</connection>
         <developerConnection>scm:git:https://github.com/zalando-stups/spring-cloud-netflix-feign-tokens.git</developerConnection>
-        <tag>HEAD</tag>
     </scm>
 </project>
