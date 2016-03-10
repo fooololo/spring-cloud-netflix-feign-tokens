@@ -8,7 +8,7 @@
     </parent>
     <groupId>org.zalando.stups</groupId>
     <artifactId>spring-cloud-netflix-feign-tokens</artifactId>
-    <version>0.5.1-SNAPSHOT</version>
+    <version>0.9.9-RC1</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -217,6 +217,6 @@
         <url>https://github.com/zalando-stups/spring-cloud-netflix-feign-tokens</url>
         <connection>scm:git:https://github.com/zalando-stups/spring-cloud-netflix-feign-tokens.git</connection>
         <developerConnection>scm:git:git@github.com:zalando-stups/spring-cloud-netflix-feign-tokens.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>0.9.9-RC1</tag>
   </scm>
 </project>
